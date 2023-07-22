@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97008fb9a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="nav">
+                <div class="logo">
+                    <h1>Tanmay's <span>Portfolio</span></h1>
+                </div>
+                <!--<ul class="logo">Hello <span>World!</span></ul>-->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#My Skills">My Skills</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function () {
+                    var header = document.querySelector("nav");
+                    nav.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello, I'm <span>Tanmay</span></h1>
+                <a href="Resume 6.0.pdf" target="_blank" class="btn btn2">See My Resume Here</a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!---------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Tanmay Khardekar. Currently,I am a BE engineering student of Artificial Intelligence
+                        and Data Science in DR. D.Y. Patil College of Engineering,Akurdi. </p><br>
+                    <p>Passionate about implementing and launching new projects.I am a Web Development enthusiast.Always
+                        excited to work in new and different technologies.</p><br>
+                    <p>I am a great team person as well as can work individually.Looking for a internship in Web
+                        development to explore and gain some experience.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- -------------My skills--------------->
+    <div id="My Skills">
+        <div class="inner">
+            <div class="header">
+                <h1 class="sub-title">My Skills</h1>
+            </div>
+            <div class="containerr">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/skills/html.png" class="skill-icon">
+                        </div>
+                        <h3>HTML 5</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/skills/css.png" class="skill-icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/skills/javascript.png" class="skill-icon">
+                        </div>
+                        <h3>Javascript</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/skills/python.png" class="skill-icon">
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/skills/c++.png" class="skill-icon">
+                        </div>
+                        <h3>C++</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/skills/sql.png" class="skill-icon">
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------projects------------- -->
+            <div id="projects">
+                <div class="container">
+                    <h1 class="sub-title">My Projects</h1>
+                    <div class="project-list">
+                        <div class="project">
+                            <img src="images/projects/project-1.png">
+                            <div class="layer">
+                                <h3>Dairy Management system</h3>
+                                <p>This is web application which can be used to manage the daily transactions
+                                    and records in the milk dairies. </p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="images/projects/project-2.png">
+                            <div class="layer">
+                                <h3>All in One Calculator and covertor</h3>
+                                <p>This is a tkinter desktop app in which you can do all the calculations add
+                                    conversions in only one app. </p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="images/projects/portfolio.png">
+                            <div class="layer">
+                                <h3>Portfolio website</h3>
+                                <p>This is my portfolio website in which all my information is shared. </p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <!-- ------------contact-------------- -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p class="email-link"><i class="fa-solid fa-paper-plane "></i><a href="mailto:tanmaykhardekar111@gmail.com" style="color:#000;">tanmaykhardekar111@gmail.com</a></p>
+                            <p><i class="fa-solid fa-phone"></i><a href="tel:9122506787"></a>+91 9122506787</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/nishant.nirmal.16"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/p/Cq2ftVWo5_iYK8FGvA-UxBgF4ZsRQ-TSGXCDvk0/?igshid=MTc4MmM1YmI2Ng=="><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/tanmay-khardekar-697bb5249"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet" class="form-data">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class=" btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright <span>&copy </span> Tanmay </p>
+                </div>
+            </div>
+
+</body>
+
+</html>
